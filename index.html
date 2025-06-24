@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pratham Sharma - Software Engineer Portfolio">
+    <title>Portfolio - Pratham Sharma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Pratham Sharma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="glass-card p-5">
+                        <h1 class="display-4 fw-bold mb-3">Hello, I'm</h1>
+                        <h1 class="display-3 fw-bold mb-3 text-gradient" id="typewriter"></h1>
+                        <h3 class="mb-4">Software Engineer</h3>
+                        <p class="lead mb-4">Passionate Software Engineer specializing in full-stack web development with expertise in modern technologies and problem-solving through innovative solutions.</p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#contact" class="btn btn-primary-glass">Get In Touch</a>
+                            <a href="#projects" class="btn btn-outline-glass">View Projects</a>
+                            <a href="assets/first resume.pdf" class="btn btn-outline-glass" target="_blank">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <div class="floating-element">
+                            <img src="assets/pratham profile.jpg" alt="Pratham Sharma">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="col-lg-8 mx-auto slide-left">
+                    <div class="glass-card p-4">
+                        <p>I am a passionate Software Engineer with expertise in full-stack web development. I love creating user-friendly applications and solving complex problems through innovative solutions.</p>
+                        <p>With a strong foundation in both frontend and backend technologies, along with solid knowledge in Data Structures, Algorithms, and Object-Oriented Programming, I strive to deliver high-quality, scalable solutions that make a difference.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in">
+                    <h2 class="section-title">Skills</h2>
+                </div>
+                <div class="col-lg-10 mx-auto">
+                    <div class="row g-4">
+                        <div class="col-md-6 stagger-animation">
+                            <div class="glass-card p-4 text-center skill-card">
+                                <i class="fab fa-html5 fa-3x mb-3 text-gradient"></i>
+                                <h5>Frontend</h5>
+                                <p>HTML, CSS, JavaScript, ReactJS, Bootstrap, Tailwind CSS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 stagger-animation">
+                            <div class="glass-card p-4 text-center skill-card">
+                                <i class="fas fa-server fa-3x mb-3 text-gradient"></i>
+                                <h5>Backend</h5>
+                                <p>Node.js, Express.js, PHP</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 stagger-animation">
+                            <div class="glass-card p-4 text-center skill-card">
+                                <i class="fas fa-database fa-3x mb-3 text-gradient"></i>
+                                <h5>Database</h5>
+                                <p>MySQL, MongoDB</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 stagger-animation">
+                            <div class="glass-card p-4 text-center skill-card">
+                                <i class="fas fa-code fa-3x mb-3 text-gradient"></i>
+                                <h5>Programming</h5>
+                                <p>C++, Data Structures, Algorithms, OOPs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in">
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                <div class="col-lg-8 mx-auto slide-right">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="glass-card p-4">
+                                <h5>Web Development Intern</h5>
+                                <h6 class="text-muted">CybHop Tech LLP, Chandigarh • 6 Months (Dec 2023 - May 2024) (Remote)</h6>
+                                <p>Gained hands-on experience in full-stack web development, working with modern technologies and contributing to real-world projects. Developed skills in frontend and backend development while working remotely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in">
+                    <h2 class="section-title">Projects</h2>
+                </div>
+                <div class="col-lg-10 mx-auto">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4 scale-in">
+                            <div class="glass-card project-card">
+                                <div class="project-image">
+                                    <div class="placeholder-image">
+                                        <img src="assets/stock-sentiment.png" alt="stock-sentiment">
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h5>Realtime Stock Sentiment Web App</h5>
+                                    <p>Real-time stock sentiment analysis application with live data processing and sentiment tracking.</p>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://realtime-stock-sentiment.onrender.com/" class="btn btn-sm btn-primary-glass" target="_blank">View Live</a>
+                                        <a href="https://github.com/Pratham2sharma/realtime-stock-sentiment" class="btn btn-sm btn-outline-glass" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 scale-in">
+                            <div class="glass-card project-card">
+                                <div class="project-image">
+                                    <div class="placeholder-image">
+                                        <img src="assets/Mern-chat.png" alt="Mern-Chat">
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h5>Realtime Chat Web App</h5>
+                                    <p>Full-stack real-time chat application built with MongoDB, Express.js, React, and Node.js.</p>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://mern-chat-app-wka4.onrender.com/" class="btn btn-sm btn-primary-glass" target="_blank">View Live</a>
+                                        <a href="https://github.com/Pratham2sharma/Mern-Chat-app" class="btn btn-sm btn-outline-glass" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 scale-in">
+                            <div class="glass-card project-card">
+                                <div class="project-image">
+                                    <div class="placeholder-image">
+                                        <img src="assets/Mern-Ecommerce.png" alt="Mern-Ecommerce">
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h5>E-commerce Platform</h5>
+                                    <p>Complete e-commerce platform with user authentication, product management, and payment integration.</p>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://mern-ecommerce-1-lk4x.onrender.com/" class="btn btn-sm btn-primary-glass" target="_blank">View Live</a>
+                                        <a href="https://github.com/Pratham2sharma/Mern-Ecommerce" class="btn btn-sm btn-outline-glass" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in">
+                    <h2 class="section-title">Achievements</h2>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <div class="row g-4">
+                        <div class="col-md-6 slide-left">
+                            <div class="glass-card p-4 text-center achievement-card">
+                                <i class="fas fa-graduation-cap fa-3x mb-3 text-gradient"></i>
+                                <h5>Web Development Internship</h5>
+                                <p>Successfully completed 6-month internship at CybHop Tech LLP, gaining practical experience in full-stack development.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 slide-right">
+                            <div class="glass-card p-4 text-center achievement-card">
+                                <i class="fas fa-code fa-3x mb-3 text-gradient"></i>
+                                <h5>Technical Expertise</h5>
+                                <p>Proficient in multiple programming languages and frameworks with strong foundation in DSA and OOPs concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 fade-in">
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="col-lg-8 mx-auto scale-in">
+                    <div class="glass-card p-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="mb-4">Contact Information</h5>
+                                <div class="contact-info">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-envelope me-3 text-gradient"></i>
+                                        <span>sharmapratham208@gmail.com</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-phone me-3 text-gradient"></i>
+                                        <span>+91 9829262494</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-map-marker-alt me-3 text-gradient"></i>
+                                        <span>Vadodara, Gujarat, India</span>
+                                    </div>
+                                </div>
+                                <div class="social-links mt-4">
+                                    <a href="https://linkedin.com/in/pratham-sharma-646045231" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Pratham2sharma" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/pratham2sharma/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <form id="contactForm">
+                                    <div class="mb-3">
+                                        <input type="text" name="from_name" class="form-control glass-input" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" name="from_email" class="form-control glass-input" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea name="message" class="form-control glass-input" rows="4" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary-glass w-100" id="submitBtn">Send Message</button>
+                                </form>
+                                <div id="successMessage" class="alert alert-success mt-3" style="display: none; background: rgba(40, 167, 69, 0.2); border: 1px solid #28a745; border-radius: 10px; color: #ffffff;">
+                                    <i class="fas fa-check-circle me-2"></i>Message sent successfully! I'll get back to you soon.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Pratham Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
